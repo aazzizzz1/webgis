@@ -28,7 +28,8 @@ Route::get('articles',[ArticlesController::class, 'articles'])->name('articles')
 
 Route::get('/qos/index', [QosController::class, 'index']);
 Route::get('/qos/create', [QosController::class, 'create']);
-Route::post('qos',[QosController::class]);
+Route::post('/qos/store', [QosController::class, 'store']);
+Route::post('/qos',[QosController::class]);
 
 Route::get('/login',[LoginController::class, 'login'])->name('login');
 

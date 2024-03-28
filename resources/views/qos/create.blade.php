@@ -14,7 +14,7 @@
             </div>
         @endif
         
-        <form action='{{url('qos/index')}}' method='post'>
+        <form action='{{url('qos/store')}}' method='post'>
         @csrf
             <div class="my-3 p-3 bg-body rounded shadow-sm">
                 <div class="display-6 fw-bold mb-4">Input Parameter QOS</div>
